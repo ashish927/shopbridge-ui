@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'items',
     component: ItemsComponent
+  },
+  {
+    path: '**',
+    component: ItemsComponent
   }
 ];
 
