@@ -10,7 +10,7 @@ export class ItemserviceService {
 
   constructor(private http: HttpClient) { }
 
-  baseUrl: string = 'http://localhost:8080/shopbridge/item';
+  baseUrl: string = 'http://localhost:9010/shopbridge/item';
 
   getItems() {
     return this.http.get<Item[]>(this.baseUrl);
