@@ -1,3 +1,4 @@
+import { ItemserviceService } from './service/itemservice.service';
 import { ItemsComponent } from './items/items.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -30,7 +31,7 @@ import {FormBuilder, FormGroup, Validators, ReactiveFormsModule} from "@angular/
     Ng2OrderModule
 
   ],
-  providers: [],
+  providers: [ItemserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

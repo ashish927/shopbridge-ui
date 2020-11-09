@@ -70,11 +70,11 @@
                     <td> 
                         <input type="image" class="table-row-action edit-action" src="assets/ico_edit.svg" *ngIf="i != enableEditIndex || enableEditIndex == null" (click)="enableEditMethod($event, i)" alt="Submit">
                         <!-- <a href="#" class="table-row-action edit-action" *ngIf="!enableEdit" (click)="enableEditMethod($event, i)"> -->
-                            <button *ngIf="enableEdit && enableEditIndex == i" id="saveBtn" class="btn page-primary-action-btn" (click)="saveSegment(user)" type="submit"><i class="fa fa-save"></i></button>
+                            <button *ngIf="enableEdit && enableEditIndex == i" id="saveBtn" class="btn page-primary-action-btn" (click)="saveSegment(item)" type="submit"><i class="fa fa-save"></i></button>
 
                             <button *ngIf="enableEdit && enableEditIndex == i" (click)="enableEdit=false; cancel()" class="btn page-secondary-action-btn" ><i class="fa fa-window-close"></i></button>
 
-                        <button class="btn table-row-action edit-action" *ngIf="i != enableEditIndex || enableEditIndex == null" (click)="deleteUser(user)"><i class="fa fa-user-times"></i></button>
+                        <button class="btn table-row-action edit-action" *ngIf="i != enableEditIndex || enableEditIndex == null" (click)="deleteUser(item)"><i class="fa fa-trash"></i></button>
                     </td>
                    
                 </tr>
