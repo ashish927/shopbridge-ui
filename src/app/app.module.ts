@@ -1,10 +1,16 @@
+import { ItemsComponent } from './items/items.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SiteHeaderComponent } from './site-header/site-header.component';
-import { ItemsComponent } from './items/items.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule} from '@angular/common/http';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { Ng2OrderModule } from 'ng2-order-pipe';
+import {FormBuilder, FormGroup, Validators, ReactiveFormsModule} from "@angular/forms";
+
 
 @NgModule({
   declarations: [
@@ -14,7 +20,15 @@ import { ItemsComponent } from './items/items.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    Ng2SearchPipeModule,
+    Ng2OrderModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
