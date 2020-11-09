@@ -58,8 +58,9 @@ export class ItemsComponent implements OnInit {
       this.ngOnInit()
     });
   }
-  //sorting
-  key: string = 'name'; //set default
+
+  
+  key: string = 'name'; 
   reverse: boolean = false;
   sort(key){
     this.key = key;
